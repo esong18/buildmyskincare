@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { StartLink } from "@/components/analyzer-context"
+import { HomeLink, StartLink } from "@/components/analyzer-context"
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false)
@@ -22,11 +22,11 @@ export function SiteHeader() {
       }`}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 md:px-8">
-        <a href="#top" className="flex items-center gap-2">
+        <HomeLink className="flex items-center gap-2">
           <span className="font-sans text-xl font-bold tracking-[-0.02em] text-rose md:text-2xl">
             BuildMySkincare
           </span>
-        </a>
+        </HomeLink>
 
         <nav aria-label="Primary" className="hidden items-center gap-8 md:flex">
           <StartLink className="border-b-2 border-rose pb-0.5 text-sm font-medium text-navy">

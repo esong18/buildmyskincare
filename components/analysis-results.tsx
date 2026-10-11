@@ -51,7 +51,7 @@ function FindingCard({ finding }: { finding: Finding }) {
           </span>
         ))}
       </div>
-      <h4 className="mt-2 font-sans text-base font-semibold text-foreground">{finding.title}</h4>
+      <h6 className="mt-2 font-sans text-base font-semibold text-foreground">{finding.title}</h6>
       <p className="mt-1 font-body text-sm text-muted-foreground">
         {finding.products[0]} <span aria-hidden="true">&times;</span>
         <span className="sr-only"> and </span> {finding.products[1]}
@@ -76,27 +76,54 @@ function Tile({ value, label, tone }: { value: number; label: string; tone: stri
   )
 }
 
-export const AnalysisResults = forwardRef<HTMLHeadingElement, { analysis: Analysis; stale: boolean }>(
-  function AnalysisResults({ analysis, stale }, headingRef) {
+export const AnalysisResults = forwardRef<
+  HTMLHeadingElement,
+  { analysis: Analysis; stale: boolean; onReanalyze: () => void }
+>(
+  function AnalysisResults({ analysis, stale, onReanalyze }, headingRef) {
     const v = verdictCopy[analysis.verdict]
     const VIcon = v.icon
     const issues = analysis.findings.filter((f) => f.status !== "synergy")
     const synergies = analysis.findings.filter((f) => f.status === "synergy")
 
     return (
-      <section aria-labelledby="results-heading" className={cn("mt-14 transition-opacity", stale && "opacity-60")}>
+      <section
+        aria-label="Compatibility analysis"
+        className="rounded-3xl border border-border bg-card p-5 shadow-sm sm:p-6 lg:sticky lg:top-24"
+      >
+        <div className="flex items-center justify-between gap-3">
+          <h3 className="flex items-center gap-2 font-sans text-xl font-semibold text-navy">
+            <Sparkles aria-hidden="true" className="h-5 w-5 text-pink" />
+            Compatibility Analysis
+          </h3>
+          <button
+            type="button"
+            onClick={onReanalyze}
+            className={cn(
+              "h-9 shrink-0 rounded-lg border px-3 text-sm font-medium transition-colors",
+              stale
+                ? "border-rose bg-rose text-primary-foreground hover:bg-rose/90"
+                : "border-border bg-card text-foreground hover:bg-muted",
+            )}
+          >
+            Re-analyze
+          </button>
+        </div>
+
         {stale && (
-          <p role="status" className="mb-4 rounded-lg bg-caution-bg px-4 py-3 font-body text-sm text-caution-text">
-            Your list has changed since this analysis. Analyze again to update the results.
+          <p role="status" className="mt-4 rounded-lg bg-caution-bg px-4 py-3 font-body text-sm text-caution-text">
+            Your list has changed since this analysis. Re-analyze to update the results.
           </p>
         )}
+
+        <div className={cn("mt-5 transition-opacity", stale && "opacity-60")}>
 
         <div className={cn("flex items-start gap-4 rounded-2xl border p-6", v.tone)}>
           <VIcon aria-hidden="true" className="mt-1 h-7 w-7 shrink-0" />
           <div>
-            <h3 id="results-heading" ref={headingRef} tabIndex={-1} className="font-sans text-2xl font-bold focus:outline-none">
+            <h4 ref={headingRef} tabIndex={-1} className="font-sans text-2xl font-bold focus:outline-none">
               {v.title}
-            </h3>
+            </h4>
             <p className="mt-1 font-body text-sm text-foreground">{v.body}</p>
           </div>
         </div>
@@ -109,7 +136,7 @@ export const AnalysisResults = forwardRef<HTMLHeadingElement, { analysis: Analys
 
         {issues.length > 0 && (
           <div className="mt-8">
-            <h4 className="font-sans text-lg font-semibold text-navy">What to look at</h4>
+            <h5 className="font-sans text-lg font-semibold text-navy">What to look at</h5>
             <ul className="mt-3 space-y-3">
               {issues.map((f) => (
                 <FindingCard key={f.key} finding={f} />
@@ -120,7 +147,7 @@ export const AnalysisResults = forwardRef<HTMLHeadingElement, { analysis: Analys
 
         {synergies.length > 0 && (
           <div className="mt-8">
-            <h4 className="font-sans text-lg font-semibold text-navy">What’s working</h4>
+            <h5 className="font-sans text-lg font-semibold text-navy">What’s working</h5>
             <ul className="mt-3 space-y-3">
               {synergies.map((f) => (
                 <FindingCard key={f.key} finding={f} />
@@ -145,6 +172,7 @@ export const AnalysisResults = forwardRef<HTMLHeadingElement, { analysis: Analys
           General ingredient guidance, not medical advice. If you have a skin condition or a reaction, check with a
           dermatologist.
         </p>
+        </div>
       </section>
     )
   },

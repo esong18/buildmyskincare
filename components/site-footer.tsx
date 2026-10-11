@@ -1,3 +1,5 @@
+import { HomeLink } from "@/components/analyzer-context"
+
 const links = ["Privacy Policy", "Terms of Service", "Contact Us", "FAQ"]
 
 export function SiteFooter() {
@@ -6,9 +8,9 @@ export function SiteFooter() {
       <div className="mx-auto max-w-6xl px-5 py-12 md:px-8">
         <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
           <div>
-            <a href="#top" className="font-sans text-xl font-bold tracking-[-0.02em] text-rose">
+            <HomeLink className="font-sans text-xl font-bold tracking-[-0.02em] text-rose">
               BuildMySkincare
-            </a>
+            </HomeLink>
             <p className="mt-2 font-body text-sm text-navy">Understand your skin better, quicker, easier.</p>
           </div>
 
