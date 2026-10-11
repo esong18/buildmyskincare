@@ -16,6 +16,8 @@ export interface Product {
   /** Active ingredients are drafted, not yet checked against the product's INCI list. */
   verified: boolean
   note?: string
+  /** Path under /public, shown as a thumbnail when present. */
+  image?: string
 }
 
 export type RuleStatus = "avoid" | "caution" | "synergy"

@@ -22,6 +22,8 @@ pnpm dev
   Any pair without a rule is treated as no known interaction.
 - `lib/analyze.ts`: checks every active across every product pair. List order does
   not affect the result in V1.
+- `lib/order.ts`: suggested application order by product category (sunscreen last).
+- `lib/pdf.ts`: builds the "Download Analysis (PDF)" file in the browser with jsPDF.
 - `components/analyzer.tsx`: search, numbered draggable list (dnd-kit), results.
 
 ## Data caveat

@@ -112,7 +112,8 @@
     ],
     "source": "sheet",
     "verified": false,
-    "note": "Low confidence; confirm ingredient list."
+    "note": "Low confidence; confirm ingredient list.",
+    "image": "/products/eqqualberry-swimming-pool-toner.png"
   },
   {
     "id": "bioderma-sensibio-h2o",
@@ -165,7 +166,8 @@
       "ceramides"
     ],
     "source": "sheet",
-    "verified": false
+    "verified": false,
+    "image": "/products/aestura-atobarrier-365-cream.png"
   },
   {
     "id": "skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum",
@@ -275,7 +277,8 @@
       "benzoyl-peroxide"
     ],
     "source": "wireframe",
-    "verified": false
+    "verified": false,
+    "image": "/products/la-roche-posay-effaclar-duo-acne-spot-treatment.png"
   },
   {
     "id": "goodal-green-tangerine-vita-c-dark-spot-serum",
@@ -286,7 +289,8 @@
       "vitamin-c"
     ],
     "source": "wireframe",
-    "verified": false
+    "verified": false,
+    "image": "/products/goodal-green-tangerine-vita-c-dark-spot-serum.png"
   },
   {
     "id": "some-by-mi-retinol-intense-reactivating-serum",
@@ -354,5 +358,18 @@
     ],
     "source": "wireframe",
     "verified": false
+  },
+  {
+    "id": "skin1004-madagascar-centella-spf-50",
+    "brand": "SKIN1004",
+    "name": "Madagascar Centella SPF 50+",
+    "category": "Sunscreen",
+    "actives": [
+      "spf-filters",
+      "centella"
+    ],
+    "source": "wireframe",
+    "verified": false,
+    "image": "/products/skin1004-madagascar-centella-spf-50.png"
   }
 ]

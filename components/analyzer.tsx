@@ -52,7 +52,7 @@ export function Analyzer() {
 
   const searchAndList = (
     <>
-      <div className="mt-8">
+      <div className={hasResult ? "mt-0" : "mt-8"}>
         <ProductSearch selectedIds={selectedIds} onAdd={add} onManual={setManualName} inputRef={inputRef} />
         {manualName !== null && (
           <ManualProductForm
@@ -69,6 +69,7 @@ export function Analyzer() {
 
       <ProductList
         items={items}
+        variant={hasResult ? "routine" : "list"}
         onRemove={(id) => setItems((prev) => prev.filter((p) => p.id !== id))}
         onClear={() => setItems([])}
         onReorder={setItems}
@@ -118,14 +119,25 @@ export function Analyzer() {
           id="analyze-heading"
           className={cn("mt-6 font-sans text-3xl font-bold text-pink md:text-[2.5rem]", !hasResult && "text-center")}
         >
-          Analyze Your Products
+          {hasResult ? "My Skincare Routines" : "Analyze Your Products"}
         </h2>
+        {hasResult && (
+          <div className="mt-2 border-b border-border pb-6">
+            <p className="flex items-center gap-2 font-body text-base text-muted-foreground">
+              <span
+                aria-hidden="true"
+                className={cn("h-2.5 w-2.5 rounded-full", stale ? "bg-caution-text" : "bg-[#00a63e]")}
+              />
+              {stale ? "Changes not analyzed yet" : "Last updated just now"}
+            </p>
+          </div>
+        )}
 
         {/* Same tree in both states so the search input and manual form keep their state. */}
-        <div className={cn("mt-2 grid grid-cols-1 items-start gap-8", hasResult && "lg:grid-cols-[1.05fr_1fr]")}>
+        <div className={cn("grid grid-cols-1 items-start gap-8", hasResult ? "mt-8 lg:grid-cols-[1.05fr_1fr]" : "mt-2")}>
           <div>{searchAndList}</div>
           {hasResult && (
-            <div className="lg:mt-8">
+            <div>
               <AnalysisResults
                 ref={resultsHeadingRef}
                 analysis={result.analysis}

@@ -18,6 +18,9 @@
   --color-caution-bg: var(--caution-bg);
   --color-caution-text: var(--caution-text);
   --color-avoid-bg: var(--avoid-bg);
+  --color-synergy: var(--synergy);
+  --color-synergy-bg: var(--synergy-bg);
+  --color-synergy-border: var(--synergy-border);
   --color-carbon-50: var(--carbon-50);
   --color-carbon-75: var(--carbon-75);
   --color-carbon-100: var(--carbon-100);
@@ -83,6 +86,9 @@
   --caution-bg: #fcefd6;
   --caution-text: #8a5a0b;
   --avoid-bg: #fce8ec;
+  --synergy: #1971c2; /* from the v1 results design */
+  --synergy-bg: #f0f9ff;
+  --synergy-border: #83b0e1;
   --navy: #093c74; /* accent: headings, sparingly */
   --carbon-50: #f7f7f7;
   --carbon-75: #e5e5e5;
