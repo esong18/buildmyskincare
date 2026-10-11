@@ -1,56 +1,34 @@
-import { DropMark } from "@/components/drop-mark"
-
-const columns = [
-  { title: "Product", links: ["Build a routine", "Analyze products", "Community feed", "Ingredient index"] },
-  { title: "Company", links: ["About", "Journal", "Careers", "Press"] },
-  { title: "Support", links: ["Help center", "Contact", "Privacy", "Terms"] },
-]
+const links = ["Privacy Policy", "Terms of Service", "Contact Us", "FAQ"]
 
 export function SiteFooter() {
   return (
-    <footer className="relative z-10 border-t border-border bg-card">
-      <div className="mx-auto max-w-6xl px-5 py-14 md:px-8">
-        <div className="grid grid-cols-2 gap-10 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
-          <div className="col-span-2 md:col-span-1">
-            <a href="#top" className="flex items-center gap-2">
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-rose text-primary-foreground">
-                <DropMark className="h-4 w-4" />
-              </span>
-              <span className="font-serif text-xl font-semibold tracking-tight text-foreground">
-                Lumea
-              </span>
+    <footer className="relative z-10 border-t border-border bg-mint-light/60">
+      <div className="mx-auto max-w-6xl px-5 py-12 md:px-8">
+        <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
+          <div>
+            <a href="#top" className="font-sans text-xl font-bold tracking-[-0.02em] text-rose">
+              BuildMySkincare
             </a>
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
-              Skincare, decoded drop by drop. Build, analyze, and share routines
-              that actually fit your skin.
-            </p>
+            <p className="mt-2 font-body text-sm text-navy">Understand your skin better, quicker, easier.</p>
           </div>
 
-          {columns.map((col) => (
-            <div key={col.title}>
-              <h3 className="text-sm font-semibold text-foreground">{col.title}</h3>
-              <ul className="mt-4 space-y-3">
-                {col.links.map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#top"
-                      className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                    >
-                      {link}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          <nav aria-label="Footer">
+            <ul className="flex flex-wrap gap-x-8 gap-y-3">
+              {links.map((link) => (
+                <li key={link}>
+                  <a href="#top" className="text-sm font-medium text-navy transition-colors hover:text-rose">
+                    {link}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
 
-        <div className="mt-12 flex flex-col items-start justify-between gap-4 border-t border-border pt-6 sm:flex-row sm:items-center">
-          <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Lumea. All rights reserved.
-          </p>
-          <p className="text-xs text-muted-foreground">Made for healthy skin, not hype.</p>
-        </div>
+        <p className="mt-10 max-w-2xl font-body text-xs leading-relaxed text-muted-foreground">
+          BuildMySkincare provides general ingredient information and is not medical advice. Talk to a
+          dermatologist before changing your routine if you have a skin condition.
+        </p>
       </div>
     </footer>
   )

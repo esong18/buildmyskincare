@@ -17,23 +17,29 @@ export function SiteHeader() {
     <header
       className={`fixed inset-x-0 top-0 z-[9999] transition-all duration-500 ${
         scrolled
-          ? "border-b border-border bg-[#F6FFF8]/95 shadow-sm backdrop-blur-md"
-          : "border-b border-transparent bg-[#F6FFF8]/90 backdrop-blur-sm"
+          ? "border-b border-border bg-mint-light/95 shadow-sm backdrop-blur-md"
+          : "border-b border-transparent bg-mint-light/90 backdrop-blur-sm"
       }`}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 md:px-8">
         <a href="#top" className="flex items-center gap-2">
-          <span className="font-sans text-xl font-extrabold tracking-[-0.04em] text-rose md:text-2xl">
+          <span className="font-sans text-xl font-bold tracking-[-0.02em] text-rose md:text-2xl">
             BuildMySkincare
           </span>
         </a>
 
+        <nav aria-label="Primary" className="hidden items-center gap-8 md:flex">
+          <a href="#analyze" className="border-b-2 border-rose pb-0.5 text-sm font-medium text-navy">
+            Build a Routine
+          </a>
+        </nav>
+
         <div className="flex items-center gap-2">
           <a
             href="#analyze"
-            className="inline-flex h-10 items-center justify-center rounded-full bg-rose px-5 text-sm font-bold text-primary-foreground transition-colors hover:bg-rose/90"
+            className="inline-flex h-10 items-center justify-center rounded-full bg-rose px-5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-rose/90"
           >
-            Analyze
+            Start Building
           </a>
         </div>
       </div>

@@ -15,25 +15,18 @@ export function ClosingCta() {
               <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-rose text-primary-foreground">
                 <DropMark className="h-5 w-5" />
               </span>
-              <h2 className="mt-6 text-balance font-serif text-4xl leading-tight font-semibold tracking-tight text-secondary-foreground md:text-5xl">
-                Start with a single drop
+              <h2 className="mt-6 text-balance font-serif text-3xl font-semibold leading-tight text-secondary-foreground md:text-4xl">
+                Ready to check your routine?
               </h2>
-              <p className="mt-4 text-pretty leading-relaxed text-secondary-foreground/80">
-                Build, analyze, and share — free to begin. Your skin&apos;s next
-                chapter starts with one honest look at what you&apos;re using.
+              <p className="mt-4 text-pretty font-body leading-relaxed text-secondary-foreground">
+                Add two or more products and see in seconds whether their actives work together.
               </p>
               <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
                 <a
-                  href="#build"
-                  className="inline-flex h-12 items-center justify-center rounded-full bg-rose px-7 text-sm font-medium text-primary-foreground transition-colors hover:bg-rose/90"
-                >
-                  Build my routine
-                </a>
-                <a
                   href="#analyze"
-                  className="inline-flex h-12 items-center justify-center rounded-full border border-secondary-foreground/20 bg-card/70 px-7 text-sm font-medium text-secondary-foreground transition-colors hover:bg-card"
+                  className="inline-flex h-12 items-center justify-center rounded-lg bg-rose px-7 text-sm font-semibold text-primary-foreground transition-colors hover:bg-rose/90"
                 >
-                  Analyze my routine
+                  Start analyzing my routine
                 </a>
               </div>
             </div>
