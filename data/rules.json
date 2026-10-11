@@ -1,0 +1,305 @@
+{
+  "actives": [
+    {
+      "id": "retinoid",
+      "label": "Retinoid (retinol / retinal)"
+    },
+    {
+      "id": "vitamin-c",
+      "label": "Vitamin C"
+    },
+    {
+      "id": "niacinamide",
+      "label": "Niacinamide"
+    },
+    {
+      "id": "aha",
+      "label": "AHA (glycolic, lactic)"
+    },
+    {
+      "id": "bha",
+      "label": "BHA (salicylic acid)"
+    },
+    {
+      "id": "benzoyl-peroxide",
+      "label": "Benzoyl Peroxide"
+    },
+    {
+      "id": "azelaic-acid",
+      "label": "Azelaic Acid"
+    },
+    {
+      "id": "hyaluronic-acid",
+      "label": "Hyaluronic Acid"
+    },
+    {
+      "id": "peptides",
+      "label": "Peptides"
+    },
+    {
+      "id": "centella",
+      "label": "Centella / Cica"
+    },
+    {
+      "id": "pdrn",
+      "label": "PDRN"
+    },
+    {
+      "id": "spf-filters",
+      "label": "SPF filters"
+    },
+    {
+      "id": "panthenol",
+      "label": "Panthenol (B5)"
+    },
+    {
+      "id": "ceramides",
+      "label": "Ceramides"
+    },
+    {
+      "id": "squalane",
+      "label": "Squalane"
+    },
+    {
+      "id": "glutathione",
+      "label": "Glutathione"
+    }
+  ],
+  "rules": [
+    {
+      "pair": [
+        "retinoid",
+        "benzoyl-peroxide"
+      ],
+      "status": "avoid",
+      "concerns": [
+        "efficacy",
+        "irritation"
+      ],
+      "explanation": "Benzoyl peroxide is an oxidizer that can break down retinoids, and the combination is also very drying and irritating.",
+      "suggestion": "Use benzoyl peroxide in the morning and the retinoid at night, or on alternate nights."
+    },
+    {
+      "pair": [
+        "vitamin-c",
+        "benzoyl-peroxide"
+      ],
+      "status": "avoid",
+      "concerns": [
+        "efficacy"
+      ],
+      "explanation": "Benzoyl peroxide oxidizes vitamin C, reducing how well it works.",
+      "suggestion": "Move vitamin C to the morning and benzoyl peroxide to the evening, or alternate days."
+    },
+    {
+      "pair": [
+        "retinoid",
+        "aha"
+      ],
+      "status": "avoid",
+      "concerns": [
+        "irritation"
+      ],
+      "explanation": "Both increase cell turnover. Layering them raises the risk of redness, peeling, and a damaged barrier.",
+      "suggestion": "Use them on different nights."
+    },
+    {
+      "pair": [
+        "retinoid",
+        "bha"
+      ],
+      "status": "caution",
+      "concerns": [
+        "irritation"
+      ],
+      "explanation": "Both can dry and irritate the skin when used together, especially if you are new to either.",
+      "suggestion": "Alternate nights, and introduce one at a time."
+    },
+    {
+      "pair": [
+        "retinoid",
+        "vitamin-c"
+      ],
+      "status": "caution",
+      "concerns": [
+        "irritation"
+      ],
+      "explanation": "Both are potent actives that work best at different pH levels and can sting when layered.",
+      "suggestion": "Vitamin C in the morning, retinoid at night."
+    },
+    {
+      "pair": [
+        "retinoid",
+        "azelaic-acid"
+      ],
+      "status": "caution",
+      "concerns": [
+        "irritation"
+      ],
+      "explanation": "Both can cause dryness or stinging, particularly while your skin is adjusting.",
+      "suggestion": "Introduce slowly, or use at different times of day."
+    },
+    {
+      "pair": [
+        "vitamin-c",
+        "aha"
+      ],
+      "status": "caution",
+      "concerns": [
+        "irritation"
+      ],
+      "explanation": "Stacking two low-pH actives can sting and over-exfoliate sensitive skin.",
+      "suggestion": "Use vitamin C in the morning and the AHA at night."
+    },
+    {
+      "pair": [
+        "vitamin-c",
+        "bha"
+      ],
+      "status": "caution",
+      "concerns": [
+        "irritation"
+      ],
+      "explanation": "Stacking two low-pH actives can sting, especially on dry or reactive skin.",
+      "suggestion": "Use at different times of day."
+    },
+    {
+      "pair": [
+        "aha",
+        "bha"
+      ],
+      "status": "caution",
+      "concerns": [
+        "irritation"
+      ],
+      "explanation": "Using two exfoliating acids together can over-exfoliate and weaken your skin barrier.",
+      "suggestion": "Alternate days rather than layering."
+    },
+    {
+      "pair": [
+        "benzoyl-peroxide",
+        "aha"
+      ],
+      "status": "caution",
+      "concerns": [
+        "irritation"
+      ],
+      "explanation": "Both are strong and drying. Together they can leave skin tight, red, or flaky.",
+      "suggestion": "Use on different days or at different times of day."
+    },
+    {
+      "pair": [
+        "benzoyl-peroxide",
+        "bha"
+      ],
+      "status": "caution",
+      "concerns": [
+        "irritation"
+      ],
+      "explanation": "Both target breakouts and can be very drying when combined.",
+      "suggestion": "Start with one, and add the other slowly or on alternate days."
+    },
+    {
+      "pair": [
+        "benzoyl-peroxide",
+        "azelaic-acid"
+      ],
+      "status": "caution",
+      "concerns": [
+        "irritation"
+      ],
+      "explanation": "Both can dry the skin. They are often used together, but watch for tightness or stinging.",
+      "suggestion": "Patch test first and introduce slowly."
+    },
+    {
+      "pair": [
+        "niacinamide",
+        "hyaluronic-acid"
+      ],
+      "status": "synergy",
+      "concerns": [],
+      "explanation": "Niacinamide supports your barrier while hyaluronic acid draws in water, so hydration lasts longer."
+    },
+    {
+      "pair": [
+        "retinoid",
+        "niacinamide"
+      ],
+      "status": "synergy",
+      "concerns": [],
+      "explanation": "Niacinamide can help soften retinoid dryness and irritation, so the pair is often better tolerated."
+    },
+    {
+      "pair": [
+        "retinoid",
+        "hyaluronic-acid"
+      ],
+      "status": "synergy",
+      "concerns": [],
+      "explanation": "Hyaluronic acid adds hydration that offsets the dryness retinoids can cause."
+    },
+    {
+      "pair": [
+        "vitamin-c",
+        "spf-filters"
+      ],
+      "status": "synergy",
+      "concerns": [],
+      "explanation": "Vitamin C adds antioxidant protection under sunscreen, helping defend against environmental damage."
+    },
+    {
+      "pair": [
+        "retinoid",
+        "spf-filters"
+      ],
+      "status": "synergy",
+      "concerns": [],
+      "explanation": "Retinoids make skin more sun-sensitive. Daily SPF protects your results and your skin."
+    },
+    {
+      "pair": [
+        "vitamin-c",
+        "niacinamide"
+      ],
+      "status": "synergy",
+      "concerns": [],
+      "explanation": "They work well together. Niacinamide supports the barrier while vitamin C targets dullness and dark spots."
+    },
+    {
+      "pair": [
+        "hyaluronic-acid",
+        "ceramides"
+      ],
+      "status": "synergy",
+      "concerns": [],
+      "explanation": "Hyaluronic acid hydrates and ceramides seal that moisture in."
+    },
+    {
+      "pair": [
+        "centella",
+        "panthenol"
+      ],
+      "status": "synergy",
+      "concerns": [],
+      "explanation": "Both soothe and support a stressed barrier, so they reinforce each other."
+    },
+    {
+      "pair": [
+        "peptides",
+        "hyaluronic-acid"
+      ],
+      "status": "synergy",
+      "concerns": [],
+      "explanation": "Hyaluronic acid hydrates while peptides support firmness, so they complement each other."
+    },
+    {
+      "pair": [
+        "retinoid",
+        "peptides"
+      ],
+      "status": "synergy",
+      "concerns": [],
+      "explanation": "Peptides are gentle and can support skin while a retinoid does the heavy lifting."
+    }
+  ]
+}

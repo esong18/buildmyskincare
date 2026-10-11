@@ -1,0 +1,358 @@
+[
+  {
+    "id": "dr-althea-345-relief-cream",
+    "brand": "Dr. Althea",
+    "name": "345 Relief Cream",
+    "category": "Moisturizer",
+    "actives": [
+      "niacinamide",
+      "centella",
+      "panthenol"
+    ],
+    "source": "sheet",
+    "verified": false
+  },
+  {
+    "id": "celimax-vita-a-retinal-shot",
+    "brand": "Celimax",
+    "name": "The Vita A Retinal Shot Tightening Booster",
+    "category": "Serum",
+    "actives": [
+      "retinoid"
+    ],
+    "source": "sheet",
+    "verified": false,
+    "note": "Sheet listed 'Retinol/al' under Category; treated as a retinal active."
+  },
+  {
+    "id": "medicube-pdrn-pink-peptide-ampoule",
+    "brand": "Medicube",
+    "name": "PDRN Pink Peptide Ampoule",
+    "category": "Serum",
+    "actives": [
+      "pdrn",
+      "peptides",
+      "niacinamide"
+    ],
+    "source": "sheet",
+    "verified": false
+  },
+  {
+    "id": "numbuzin-no5-glutathione-serum",
+    "brand": "Numbuzin",
+    "name": "No. 5 Glutathione Vitamin Concentrated Serum",
+    "category": "Serum",
+    "actives": [
+      "niacinamide",
+      "vitamin-c",
+      "glutathione"
+    ],
+    "source": "sheet",
+    "verified": false,
+    "note": "Vitamin C is a derivative at low concentration; confirm."
+  },
+  {
+    "id": "beplain-mung-bean-ph-balanced-cleansing-foam",
+    "brand": "Beplain",
+    "name": "Mung Bean pH Balanced Cleansing Foam",
+    "category": "Cleanser",
+    "actives": [],
+    "source": "sheet",
+    "verified": false
+  },
+  {
+    "id": "skin1004-madagascar-centella-ampoule",
+    "brand": "SKIN1004",
+    "name": "Madagascar Centella Ampoule",
+    "category": "Serum",
+    "actives": [
+      "centella"
+    ],
+    "source": "sheet",
+    "verified": false
+  },
+  {
+    "id": "roundlab-dokdo-cleanser",
+    "brand": "Roundlab",
+    "name": "Dokdo Cleanser",
+    "category": "Cleanser",
+    "actives": [],
+    "source": "sheet",
+    "verified": false
+  },
+  {
+    "id": "torriden-dive-in-low-molecular-hyaluronic-acid",
+    "brand": "Torriden",
+    "name": "Dive In Low Molecular Hyaluronic Acid Serum",
+    "category": "Serum",
+    "actives": [
+      "hyaluronic-acid"
+    ],
+    "source": "sheet",
+    "verified": false
+  },
+  {
+    "id": "purito-mighty-bamboo-panthenol-cream",
+    "brand": "Purito",
+    "name": "Mighty Bamboo Panthenol Cream",
+    "category": "Moisturizer",
+    "actives": [
+      "panthenol"
+    ],
+    "source": "sheet",
+    "verified": false
+  },
+  {
+    "id": "eqqualberry-swimming-pool-toner",
+    "brand": "EQQUALBERRY",
+    "name": "Swimming Pool Toner",
+    "category": "Toner",
+    "actives": [
+      "hyaluronic-acid"
+    ],
+    "source": "sheet",
+    "verified": false,
+    "note": "Low confidence; confirm ingredient list."
+  },
+  {
+    "id": "bioderma-sensibio-h2o",
+    "brand": "Bioderma",
+    "name": "Sensibio H2O",
+    "category": "Cleanser",
+    "actives": [],
+    "source": "sheet",
+    "verified": false
+  },
+  {
+    "id": "dr-g-red-blemish-clear-soothing-cream",
+    "brand": "Dr.G",
+    "name": "Red Blemish Clear Soothing Cream",
+    "category": "Moisturizer",
+    "actives": [
+      "centella"
+    ],
+    "source": "sheet",
+    "verified": false
+  },
+  {
+    "id": "wellage-real-hyaluronic-blue-100-ampoule",
+    "brand": "WELLAGE",
+    "name": "Real Hyaluronic Blue 100 Ampoule",
+    "category": "Serum",
+    "actives": [
+      "hyaluronic-acid"
+    ],
+    "source": "sheet",
+    "verified": false
+  },
+  {
+    "id": "bioheal-boh-probioderm-3d-lifting-cream",
+    "brand": "BIOHEAL BOH",
+    "name": "Probioderm 3D Lifting Cream",
+    "category": "Moisturizer",
+    "actives": [
+      "peptides"
+    ],
+    "source": "sheet",
+    "verified": false
+  },
+  {
+    "id": "aestura-atobarrier-365-cream",
+    "brand": "AESTURA",
+    "name": "Atobarrier 365 Cream",
+    "category": "Moisturizer",
+    "actives": [
+      "ceramides"
+    ],
+    "source": "sheet",
+    "verified": false
+  },
+  {
+    "id": "skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum",
+    "brand": "SKIN1004",
+    "name": "Madagascar Centella Hyalu-Cica Water-Fit Sun Serum",
+    "category": "Sunscreen",
+    "actives": [
+      "spf-filters",
+      "centella",
+      "hyaluronic-acid"
+    ],
+    "source": "sheet",
+    "verified": false
+  },
+  {
+    "id": "eltamd-uv-physical-broad-spectrum-spf",
+    "brand": "EltaMD",
+    "name": "UV Physical Broad-Spectrum SPF",
+    "category": "Sunscreen",
+    "actives": [
+      "spf-filters"
+    ],
+    "source": "sheet",
+    "verified": false
+  },
+  {
+    "id": "beauty-of-joseon-relief-sun-rice-probiotics",
+    "brand": "Beauty of Joseon",
+    "name": "Relief Sun: Rice + Probiotics",
+    "category": "Sunscreen",
+    "actives": [
+      "spf-filters"
+    ],
+    "source": "sheet",
+    "verified": false
+  },
+  {
+    "id": "s-nature-aqua-squalane-moisturizing-cream",
+    "brand": "S.NATURE",
+    "name": "Aqua Squalane Moisturizing Cream",
+    "category": "Moisturizer",
+    "actives": [
+      "squalane"
+    ],
+    "source": "sheet",
+    "verified": false
+  },
+  {
+    "id": "dr-althea-vitamin-c-boosting-serum",
+    "brand": "Dr. Althea",
+    "name": "Vitamin C Boosting Serum",
+    "category": "Serum",
+    "actives": [
+      "vitamin-c"
+    ],
+    "source": "sheet",
+    "verified": false
+  },
+  {
+    "id": "biodance-bio-collagen-gel-toner-pads",
+    "brand": "BIODANCE",
+    "name": "Bio Collagen Gel Toner Pads",
+    "category": "Toner",
+    "actives": [
+      "peptides"
+    ],
+    "source": "sheet",
+    "verified": false,
+    "note": "Low confidence; collagen-type hydration, confirm."
+  },
+  {
+    "id": "anua-pdrn-hyaluronic-acid-capsule-100-serum",
+    "brand": "Anua",
+    "name": "PDRN Hyaluronic Acid Capsule 100 Serum",
+    "category": "Serum",
+    "actives": [
+      "pdrn",
+      "hyaluronic-acid"
+    ],
+    "source": "sheet",
+    "verified": false
+  },
+  {
+    "id": "skinfood-carrot-carotene-balancing-cleansing-foam",
+    "brand": "SKINFOOD",
+    "name": "Carrot Carotene Balancing Cleansing Foam",
+    "category": "Cleanser",
+    "actives": [],
+    "source": "sheet",
+    "verified": false
+  },
+  {
+    "id": "vanicream-gentle-facial-cleanser",
+    "brand": "Vanicream",
+    "name": "Gentle Facial Cleanser",
+    "category": "Cleanser",
+    "actives": [],
+    "source": "sheet",
+    "verified": false
+  },
+  {
+    "id": "la-roche-posay-effaclar-duo-acne-spot-treatment",
+    "brand": "La Roche-Posay",
+    "name": "Effaclar Duo Acne Spot Treatment",
+    "category": "Treatment",
+    "actives": [
+      "benzoyl-peroxide"
+    ],
+    "source": "wireframe",
+    "verified": false
+  },
+  {
+    "id": "goodal-green-tangerine-vita-c-dark-spot-serum",
+    "brand": "GOODAL",
+    "name": "Green Tangerine Vita C Dark Spot Serum",
+    "category": "Treatment",
+    "actives": [
+      "vitamin-c"
+    ],
+    "source": "wireframe",
+    "verified": false
+  },
+  {
+    "id": "some-by-mi-retinol-intense-reactivating-serum",
+    "brand": "SOME BY MI",
+    "name": "Retinol Intense Reactivating Serum",
+    "category": "Serum",
+    "actives": [
+      "retinoid"
+    ],
+    "source": "wireframe",
+    "verified": false
+  },
+  {
+    "id": "the-ordinary-hyaluronic-acid-2-b5",
+    "brand": "The Ordinary",
+    "name": "Hyaluronic Acid 2% + B5",
+    "category": "Serum",
+    "actives": [
+      "hyaluronic-acid",
+      "panthenol"
+    ],
+    "source": "wireframe",
+    "verified": false
+  },
+  {
+    "id": "the-ordinary-glycolic-acid-7-toning-solution",
+    "brand": "The Ordinary",
+    "name": "Glycolic Acid 7% Toning Solution",
+    "category": "Toner",
+    "actives": [
+      "aha"
+    ],
+    "source": "wireframe",
+    "verified": false
+  },
+  {
+    "id": "cosrx-bha-blackhead-power-liquid",
+    "brand": "COSRX",
+    "name": "BHA Blackhead Power Liquid",
+    "category": "Toner",
+    "actives": [
+      "bha"
+    ],
+    "source": "wireframe",
+    "verified": false
+  },
+  {
+    "id": "the-ordinary-niacinamide-10-zinc-1",
+    "brand": "The Ordinary",
+    "name": "Niacinamide 10% + Zinc 1%",
+    "category": "Serum",
+    "actives": [
+      "niacinamide"
+    ],
+    "source": "wireframe",
+    "verified": false
+  },
+  {
+    "id": "the-ordinary-azelaic-acid-suspension-10",
+    "brand": "The Ordinary",
+    "name": "Azelaic Acid Suspension 10%",
+    "category": "Treatment",
+    "actives": [
+      "azelaic-acid"
+    ],
+    "source": "wireframe",
+    "verified": false
+  }
+]
