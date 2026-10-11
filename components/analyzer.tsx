@@ -6,6 +6,8 @@ import { useAnalyzer } from "@/components/analyzer-context"
 import { ManualProductForm } from "@/components/manual-product-form"
 import { ProductList } from "@/components/product-list"
 import { ProductSearch } from "@/components/product-search"
+import { AnalysisResults } from "@/components/analysis-results"
+import { analyze, type Analysis } from "@/lib/analyze"
 import type { Product } from "@/lib/types"
 
 const MIN_PRODUCTS = 2
@@ -16,6 +18,8 @@ export function Analyzer() {
   const [manualName, setManualName] = useState<string | null>(null)
   const sectionRef = useRef<HTMLElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
+  const resultsHeadingRef = useRef<HTMLHeadingElement>(null)
+  const [result, setResult] = useState<{ analysis: Analysis; signature: string } | null>(null)
 
   useEffect(() => {
     if (!started) return
@@ -25,6 +29,18 @@ export function Analyzer() {
 
   const selectedIds = useMemo(() => new Set(items.map((p) => p.id)), [items])
   const canAnalyze = items.length >= MIN_PRODUCTS
+
+  const signature = items.map((p) => p.id).join(",")
+  const stale = result !== null && result.signature !== signature
+
+  function runAnalysis() {
+    setResult({ analysis: analyze(items), signature })
+    // Results mount on the next render; move focus there once they exist.
+    requestAnimationFrame(() => {
+      resultsHeadingRef.current?.scrollIntoView({ behavior: "smooth", block: "center" })
+      resultsHeadingRef.current?.focus({ preventScroll: true })
+    })
+  }
 
   function add(product: Product) {
     setItems((prev) => (prev.some((p) => p.id === product.id) ? prev : [...prev, product]))
@@ -69,6 +85,7 @@ export function Analyzer() {
           <button
             type="button"
             disabled={!canAnalyze}
+            onClick={runAnalysis}
             aria-describedby="analyze-hint"
             className="inline-flex h-14 items-center gap-3 rounded-full bg-rose px-10 font-sans text-lg font-semibold text-primary-foreground shadow-[0_8px_24px_rgba(196,43,71,0.25)] transition-colors hover:bg-rose/90 disabled:cursor-not-allowed disabled:bg-carbon-100 disabled:text-carbon-300 disabled:shadow-none"
           >
@@ -81,6 +98,8 @@ export function Analyzer() {
             {items.length >= MIN_PRODUCTS && "Order is for your reference. It doesn\u2019t change the analysis yet."}
           </p>
         </div>
+
+        {result && <AnalysisResults ref={resultsHeadingRef} analysis={result.analysis} stale={stale} />}
       </div>
     </section>
   )
