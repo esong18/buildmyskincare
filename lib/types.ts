@@ -11,13 +11,11 @@ export interface Product {
   name: string
   category: string
   actives: ActiveId[]
-  /** "sheet" = Skincare Product List.xlsx, "wireframe" = added from the Figma examples. */
-  source: "sheet" | "wireframe"
+  /** "sheet" = Skincare Product List.xlsx, "wireframe" = added from the Figma examples, "custom" = user-defined. */
+  source: "sheet" | "wireframe" | "custom"
   /** Active ingredients are drafted, not yet checked against the product's INCI list. */
   verified: boolean
   note?: string
-  /** True for products the user defined themselves via the manual active picker. */
-  custom?: boolean
 }
 
 export type RuleStatus = "avoid" | "caution" | "synergy"

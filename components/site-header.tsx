@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { DropMark } from "@/components/drop-mark"
+import { StartLink } from "@/components/analyzer-context"
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false)
@@ -29,18 +29,17 @@ export function SiteHeader() {
         </a>
 
         <nav aria-label="Primary" className="hidden items-center gap-8 md:flex">
-          <a href="#analyze" className="border-b-2 border-rose pb-0.5 text-sm font-medium text-navy">
+          <StartLink className="border-b-2 border-rose pb-0.5 text-sm font-medium text-navy">
             Build a Routine
-          </a>
+          </StartLink>
         </nav>
 
         <div className="flex items-center gap-2">
-          <a
-            href="#analyze"
+          <StartLink
             className="inline-flex h-10 items-center justify-center rounded-full bg-rose px-5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-rose/90"
           >
             Start Building
-          </a>
+          </StartLink>
         </div>
       </div>
     </header>

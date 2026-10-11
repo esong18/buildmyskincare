@@ -1,3 +1,4 @@
+import { StartLink } from "@/components/analyzer-context"
 import { Reveal } from "@/components/reveal"
 import { DropMark } from "@/components/drop-mark"
 
@@ -22,12 +23,11 @@ export function ClosingCta() {
                 Add two or more products and see in seconds whether their actives work together.
               </p>
               <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-                <a
-                  href="#analyze"
+                <StartLink
                   className="inline-flex h-12 items-center justify-center rounded-lg bg-rose px-7 text-sm font-semibold text-primary-foreground transition-colors hover:bg-rose/90"
                 >
                   Start analyzing my routine
-                </a>
+                </StartLink>
               </div>
             </div>
           </div>

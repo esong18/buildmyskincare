@@ -9,7 +9,7 @@ export const rules = rulesJson.rules as Rule[]
 const activeLabels = new Map(actives.map((a) => [a.id, a.label]))
 export const activeLabel = (id: ActiveId) => activeLabels.get(id) ?? id
 
-export const fullName = (p: Pick<Product, "brand" | "name">) => `${p.brand} ${p.name}`
+export const fullName = (p: Pick<Product, "brand" | "name">) => `${p.brand} ${p.name}`.trim()
 
 /** Case-insensitive match across name, brand, and category. All query words must match. */
 export function searchProducts(query: string, exclude: Set<string> = new Set(), limit = 8): Product[] {

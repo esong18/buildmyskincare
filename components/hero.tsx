@@ -1,3 +1,5 @@
+import { StartLink } from "@/components/analyzer-context"
+
 export function Hero() {
   return (
     <section id="top" className="relative min-h-[680px] overflow-hidden bg-rose-soft/50 pt-32 pb-28 md:min-h-[760px] md:pt-44 md:pb-32">
@@ -13,12 +15,11 @@ export function Hero() {
             <p className="text-pretty font-sans text-lg font-light leading-[1.4] text-foreground md:text-2xl">
               AI powered analysis of skincare ingredients in your routine to help get you to your goals
             </p>
-            <a
-              href="#analyze"
+            <StartLink
               className="mt-8 inline-flex h-12 items-center justify-center rounded-lg bg-rose px-6 text-base font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5 hover:bg-rose/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mint-dark"
             >
               Start analyzing my routine
-            </a>
+            </StartLink>
           </div>
         </div>
       </div>
