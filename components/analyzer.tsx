@@ -62,6 +62,7 @@ export function Analyzer() {
           items={items}
           onRemove={(id) => setItems((prev) => prev.filter((p) => p.id !== id))}
           onClear={() => setItems([])}
+          onReorder={setItems}
         />
 
         <div className="mt-12 flex flex-col items-center gap-3">
@@ -77,6 +78,7 @@ export function Analyzer() {
           <p id="analyze-hint" className="min-h-5 font-body text-sm text-muted-foreground">
             {items.length === 0 && "Add two or more products to analyze."}
             {items.length === 1 && "Add one more product to analyze."}
+            {items.length >= MIN_PRODUCTS && "Order is for your reference. It doesn\u2019t change the analysis yet."}
           </p>
         </div>
       </div>
