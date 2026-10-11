@@ -167,7 +167,8 @@
     ],
     "source": "sheet",
     "verified": false,
-    "image": "/products/aestura-atobarrier-365-cream.png"
+    "image": "/products/aestura-atobarrier-365-cream.png",
+    "displayName": "AESTURA ATOBARRIER365 Cream"
   },
   {
     "id": "skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum",
@@ -278,7 +279,8 @@
     ],
     "source": "wireframe",
     "verified": false,
-    "image": "/products/la-roche-posay-effaclar-duo-acne-spot-treatment.png"
+    "image": "/products/la-roche-posay-effaclar-duo-acne-spot-treatment.png",
+    "displayName": "Effaclar Duo Acne Spot Treatment"
   },
   {
     "id": "goodal-green-tangerine-vita-c-dark-spot-serum",

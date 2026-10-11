@@ -13,10 +13,10 @@ export default function Page() {
     <AnalyzerProvider>
       <div className="relative z-[9999]">
         <SiteHeader />
-        <ScrollDropNav />
       </div>
       <main className="relative z-0">
         <LandingGate>
+          <ScrollDropNav />
           <Hero />
           <Features />
           <AnalyzeShowcase />

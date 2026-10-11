@@ -16,6 +16,8 @@ export interface Product {
   /** Active ingredients are drafted, not yet checked against the product's INCI list. */
   verified: boolean
   note?: string
+  /** Overrides brand + name where the design shows a different title. */
+  displayName?: string
   /** Path under /public, shown as a thumbnail when present. */
   image?: string
 }

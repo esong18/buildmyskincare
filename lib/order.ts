@@ -50,16 +50,16 @@ export function suggestOrder(items: Product[]): OrderStep[] {
 
   return order.map(({ p, i }, pos) => {
     const sunscreen = p.category === "Sunscreen"
-    const step: OrderStep = { name: fullName(p) }
+    const step: OrderStep = { name: p.displayName ?? fullName(p) }
     if (!inPlace.has(i)) {
       step.note = {
         tone: "revised",
         text: sunscreen
           ? "Moved to the last step so nothing dilutes your sun protection"
-          : "Revised position: thinner, water-based products go first",
+          : "Revised position for better absorption",
       }
     } else if (sunscreen && pos === n - 1) {
-      step.note = { tone: "ok", text: "Correct placement (last step)" }
+      step.note = { tone: "ok", text: "Correct placement (Last step)" }
     }
     return step
   })
