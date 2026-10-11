@@ -5,8 +5,26 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-sans: var(--font-merriweather-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-merriweather-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --color-pink: var(--pink);
+  --color-navy: var(--navy);
+  --color-mint: var(--mint);
+  --color-mint-light: var(--mint-light);
+  --color-mint-mid: var(--mint-mid);
+  --color-mint-dark: var(--mint-dark);
+  --color-compatible-bg: var(--compatible-bg);
+  --color-caution-bg: var(--caution-bg);
+  --color-caution-text: var(--caution-text);
+  --color-avoid-bg: var(--avoid-bg);
+  --color-carbon-50: var(--carbon-50);
+  --color-carbon-75: var(--carbon-75);
+  --color-carbon-100: var(--carbon-100);
+  --color-carbon-200: var(--carbon-200);
+  --color-carbon-300: var(--carbon-300);
+  --color-carbon-400: var(--carbon-400);
+  --color-carbon-500: var(--carbon-500);
   --color-sage: var(--sage);
   --color-sage-soft: var(--sage-soft);
   --color-rose: var(--rose);
@@ -53,42 +71,61 @@
 
 :root {
   color-scheme: light;
-  --background: #faf8f4;
-  --foreground: #34423a;
+  /* Tokens from docs/wireframes/brand-colors.png */
+  --mint: #b5d7c5;
+  --mint-light: #e5f4ec;
+  --mint-mid: #82bb9d;
+  --mint-dark: #2f6b4c;
+  --pink: #f26a8d; /* secondary light: large display type + illustration */
+  --rose: #c42b47; /* secondary: white-text buttons, "avoid" accents */
+  --rose-soft: #fce8ec; /* avoid bg */
+  --compatible-bg: #e5f4ec;
+  --caution-bg: #fcefd6;
+  --caution-text: #8a5a0b;
+  --avoid-bg: #fce8ec;
+  --navy: #093c74; /* accent: headings, sparingly */
+  --carbon-50: #f7f7f7;
+  --carbon-75: #e5e5e5;
+  --carbon-100: #dcdcdc;
+  --carbon-200: #b3b3b3;
+  --carbon-300: #757575;
+  --carbon-400: #6b6b6b;
+  --carbon-500: #424242;
+
+  --background: #ffffff;
+  --foreground: #424242;
   --card: #ffffff;
-  --card-foreground: #34423a;
+  --card-foreground: #424242;
   --popover: #ffffff;
-  --popover-foreground: #34423a;
-  --primary: #f26a8d;
+  --popover-foreground: #424242;
+  --primary: #c42b47;
   --primary-foreground: #ffffff;
   --secondary: #b5d7c5;
-  --secondary-foreground: #2f3d35;
-  --muted: #f0eee7;
-  --muted-foreground: #6f766e;
-  --accent: #eef4ef;
-  --accent-foreground: #2f3d35;
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: #e6e2d9;
-  --input: #e6e2d9;
-  --ring: #f26a8d;
+  --secondary-foreground: #424242;
+  --muted: #f7f7f7;
+  --muted-foreground: #757575;
+  --accent: #e5f4ec;
+  --accent-foreground: #424242;
+  --destructive: #c42b47;
+  --border: #e5e5e5;
+  --input: #e5e5e5;
+  --ring: #2f6b4c;
   --chart-1: #b5d7c5;
   --chart-2: #f26a8d;
-  --chart-3: #8fbfa6;
-  --chart-4: #f7a3b8;
-  --chart-5: #34423a;
-  --radius: 1.1rem;
+  --chart-3: #82bb9d;
+  --chart-4: #c42b47;
+  --chart-5: #424242;
   --sage: #b5d7c5;
-  --sage-soft: #dcebe2;
-  --rose: #f26a8d;
-  --rose-soft: #fbe1e8;
+  --sage-soft: #e5f4ec;
+  --radius: 1.1rem;
   --sidebar: #ffffff;
-  --sidebar-foreground: #34423a;
-  --sidebar-primary: #f26a8d;
+  --sidebar-foreground: #424242;
+  --sidebar-primary: #c42b47;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #eef4ef;
-  --sidebar-accent-foreground: #2f3d35;
-  --sidebar-border: #e6e2d9;
-  --sidebar-ring: #f26a8d;
+  --sidebar-accent: #e5f4ec;
+  --sidebar-accent-foreground: #424242;
+  --sidebar-border: #e5e5e5;
+  --sidebar-ring: #2f6b4c;
 }
 
 .dark {

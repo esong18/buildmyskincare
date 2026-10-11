@@ -1,19 +1,25 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Merriweather_Sans } from 'next/font/google'
+import { Inter, Poppins } from 'next/font/google'
 import './globals.css'
 
-const merriweatherSans = Merriweather_Sans({
+const poppins = Poppins({
   subsets: ['latin'],
-  variable: '--font-merriweather-sans',
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-poppins',
+  display: 'swap',
+})
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
   display: 'swap',
 })
 
 export const metadata: Metadata = {
-  title: 'BuildMySkincare — Build, analyze, and share',
+  title: 'BuildMySkincare — Skincare ingredient compatibility checker',
   description:
-    'Build, analyze, and share your skincare routine with AI-powered ingredient compatibility insights.',
-  generator: 'v0.app',
+    'Check whether the active ingredients in your skincare routine work together or cancel each other out.',
   icons: {
     icon: [
       {
@@ -35,7 +41,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   colorScheme: 'light',
-  themeColor: '#faf8f4',
+  themeColor: '#ffffff',
 }
 
 export default function RootLayout({
@@ -44,7 +50,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`light bg-background ${merriweatherSans.variable}`}>
+    <html lang="en" className={`light bg-background ${poppins.variable} ${inter.variable}`}>
       <body className="font-sans antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
